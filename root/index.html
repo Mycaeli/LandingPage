@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Double Pendulum Animation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar at the top -->
+  <nav>
+    <ul>
+      <li><a href="#" class="active" onclick="setActiveNav(this)">Home</a></li>
+      <li><a href="#" onclick="setActiveNav(this)">About Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- Control Bar below Navbar --> 
+  <div class="control-bar">
+    <button class="active" onclick="setParticleType(this, 'circle')">&#9679;</button> <!-- Circle icon -->
+    <button onclick="setParticleType(this, 'triangle')">&#9650;</button> <!-- Triangle icon -->
+    <button onclick="setParticleType(this, 'square')">&#x25A0;</button> <!-- Square icon -->
+  </div>
+  <!-- Canvas where the animation will be drawn -->
+  <div id="canvas-container"></div>
+
+  <!-- Include p5.js and sketch.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
